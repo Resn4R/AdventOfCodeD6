@@ -12,7 +12,7 @@ struct RaceCalculator {
         time
     }
     
-    func getTimeLeft(ButtonPressedFor: time: Int, raceDuration: Int) -> Int {
+    func getTimeLeft(ButtonPressedFor time: Int, raceDuration: Int) -> Int {
         raceDuration - time
     }
 }
