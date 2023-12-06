@@ -28,5 +28,16 @@ final class AdventOfCodeD6Tests: XCTestCase {
         
         XCTAssertEqual(calc.getTimeLeft(ButtonPressedFor: buttonPress, raceDuration: raceLenght), result)
     }
+    
+    func testGivenButtonPressTimeShouldReturnDistanceCovered() {
+        let calc = RaceCalculator()
+        let buttonPress = 2
+        let raceDistance = 9
+        let raceTime = 7
+        
+        let distanceCovered = 10
+        
+        XCTAssertEqual(calc.getDistance(buttonPressedFor: buttonPress, raceLength: raceDistance, raceDuration: raceTime), distanceCovered)
+    }
 
 }

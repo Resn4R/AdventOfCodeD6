@@ -15,4 +15,10 @@ struct RaceCalculator {
     func getTimeLeft(ButtonPressedFor time: Int, raceDuration: Int) -> Int {
         raceDuration - time
     }
+    
+    func getDistance(buttonPressedFor speed: Int, raceLength: Int, raceDuration: Int) -> Int {
+        let timeLeft = raceDuration - speed
+        
+        return speed * timeLeft
+    }
 }
