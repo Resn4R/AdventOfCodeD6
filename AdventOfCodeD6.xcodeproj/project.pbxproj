@@ -14,6 +14,7 @@
 		4FE56E0B2B2131F60060F24A /* AdventOfCodeD6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE56E0A2B2131F60060F24A /* AdventOfCodeD6Tests.swift */; };
 		4FE56E152B2131F60060F24A /* AdventOfCodeD6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE56E142B2131F60060F24A /* AdventOfCodeD6UITests.swift */; };
 		4FE56E172B2131F60060F24A /* AdventOfCodeD6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE56E162B2131F60060F24A /* AdventOfCodeD6UITestsLaunchTests.swift */; };
+		4FE56E242B2132170060F24A /* RaceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE56E232B2132160060F24A /* RaceCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4FE56E102B2131F60060F24A /* AdventOfCodeD6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeD6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE56E142B2131F60060F24A /* AdventOfCodeD6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeD6UITests.swift; sourceTree = "<group>"; };
 		4FE56E162B2131F60060F24A /* AdventOfCodeD6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCodeD6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FE56E232B2132160060F24A /* RaceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4FE56DF92B2131F40060F24A /* AdventOfCodeD6App.swift */,
 				4FE56DFB2B2131F40060F24A /* ContentView.swift */,
+				4FE56E232B2132160060F24A /* RaceCalculator.swift */,
 				4FE56DFD2B2131F60060F24A /* Assets.xcassets */,
 				4FE56DFF2B2131F60060F24A /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE56DFC2B2131F40060F24A /* ContentView.swift in Sources */,
+				4FE56E242B2132170060F24A /* RaceCalculator.swift in Sources */,
 				4FE56DFA2B2131F40060F24A /* AdventOfCodeD6App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
