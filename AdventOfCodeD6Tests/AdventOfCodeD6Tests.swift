@@ -53,13 +53,24 @@ final class AdventOfCodeD6Tests: XCTestCase {
     
     func test2GivenRaceShouldReturnNumberOfTimesYouCanBeatIt() {
         let calc = RaceCalculator()
-        //let buttonPress = 2
         let raceDistance = 40
         let raceTime = 15
         
         let result = 8
         
         XCTAssertEqual(calc.getWaysToWin(race: (raceTime,raceDistance)), result)
+    }
+    
+    
+    func testGivenPuzzleInputShouldReturnPuzzleSolution() {
+        let calc = RaceCalculator()
+        let races = """
+        Time:        45     97     72     95
+        Distance:   305   1062   1110   1695
+        """
+        let result = 8
+        
+        XCTAssertEqual(calc.calculateWaysToWinAllRaces(races), result)
     }
 
 }
