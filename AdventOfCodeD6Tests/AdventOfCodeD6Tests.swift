@@ -68,7 +68,18 @@ final class AdventOfCodeD6Tests: XCTestCase {
         Time:        45     97     72     95
         Distance:   305   1062   1110   1695
         """
-        let result = 8
+        let result = 2612736
+        
+        XCTAssertEqual(calc.calculateWaysToWinAllRaces(races), result)
+    }
+    
+    func testGivenPuzzlept2InputShouldReturnPuzzlept2Solution() {
+        let calc = RaceCalculator()
+        let races = """
+        Time:        45977295
+        Distance:   305106211101695
+        """
+        let result = 29891250
         
         XCTAssertEqual(calc.calculateWaysToWinAllRaces(races), result)
     }
