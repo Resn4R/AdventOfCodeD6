@@ -39,5 +39,27 @@ final class AdventOfCodeD6Tests: XCTestCase {
         
         XCTAssertEqual(calc.getDistance(buttonPressedFor: buttonPress, raceLength: raceDistance, raceDuration: raceTime), distanceCovered)
     }
+    
+    func testGivenRaceShouldReturnNumberOfTimesYouCanBeatIt() {
+        let calc = RaceCalculator()
+        //let buttonPress = 2
+        let raceDistance = 9
+        let raceTime = 7
+        
+        let result = 4
+        
+        XCTAssertEqual(calc.getWaysToWin(race: (raceTime,raceDistance)), result)
+    }
+    
+    func test2GivenRaceShouldReturnNumberOfTimesYouCanBeatIt() {
+        let calc = RaceCalculator()
+        //let buttonPress = 2
+        let raceDistance = 40
+        let raceTime = 15
+        
+        let result = 8
+        
+        XCTAssertEqual(calc.getWaysToWin(race: (raceTime,raceDistance)), result)
+    }
 
 }

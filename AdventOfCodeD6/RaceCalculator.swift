@@ -21,4 +21,16 @@ struct RaceCalculator {
         
         return speed * timeLeft
     }
+    
+    func getWaysToWin(race: (length: Int, distance: Int)) -> Int {
+        var sum = 0
+        
+        for buttonPress in 0...race.length {
+            let coverage = getDistance(buttonPressedFor: buttonPress, raceLength: race.distance, raceDuration: race.length)
+            
+            if coverage >= race.distance { sum += 1 }
+        }
+        
+        return sum
+    }
 }
