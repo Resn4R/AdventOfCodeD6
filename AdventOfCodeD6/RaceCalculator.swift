@@ -42,7 +42,6 @@ struct RaceCalculator {
         
         for i in 0..<times.count {
             let wtw = getWaysToWin(race: (times[i], distances[i]))
-            print("race \(i): time \(times[i]), distance \(distances[i]), ways to win \(wtw)")
             sum *= wtw
         }
         
